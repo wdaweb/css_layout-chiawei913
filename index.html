@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(transparent 80%, rgba(0, 0, 0, 0.5) 100%);
+    }
+    .container {
+      width: 100%;
+      /* background: red; */
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      
+    }
+    .col {
+      width: 300px;
+      height: 550px;
+      left: 15.5%;
+      background-image: linear-gradient(45turn, #fff, #fff);
+      box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+      float: left;
+      padding: 1rem;
+      /* 定位點 */
+      position: relative;
+      -webkit-box-reflect: below -20px linear-gradient(transparent,rgba(0,0,0,0.5));
+    }
+    .col img{
+      transform: translate(0%,80%);
+      border-radius: 50%;
+      border-bottom: 1px solid transparent;
+      /* 有進場、回場動畫 */
+      transition: 1s;
+    }
+    .col p{
+      transform: translate(0%,100%);
+    }
+    .col img:hover{
+      border-bottom: 5px solid #ff0;
+      font-size: 1.5rem;
+      background-color: red;
+      box-shadow: 0 0 10px 5px rgba(104, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col">
+      <img src="https://picsum.photos/100/100/?random=3">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit dignissimos natus numquam quia aliquid
+        tempora, inventore reiciendis voluptas eveniet ad? Culpa, suscipit. In sapiente molestiae vel debitis, ab
+        voluptate.
+      </p>
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/100/100/?random=4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit dignissimos natus numquam quia aliquid
+        tempora, inventore reiciendis voluptas eveniet ad? Culpa, suscipit. In sapiente molestiae vel debitis, ab
+        voluptate.
+      </p>
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/100/100/?random=5">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit dignissimos natus numquam quia aliquid
+        tempora, inventore reiciendis voluptas eveniet ad? Culpa, suscipit. In sapiente molestiae vel debitis, ab
+        voluptate.
+      </p>
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/100/100/?random=6">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit dignissimos natus numquam quia aliquid
+        tempora, inventore reiciendis voluptas eveniet ad? Culpa, suscipit. In sapiente molestiae vel debitis, ab
+        voluptate.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
